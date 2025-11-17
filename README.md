@@ -5,7 +5,7 @@ All requests must be sent using simple GET requests.
 Responses are JSON and include proper HTTP codes.
 
 Base URL example:
-http://your-server-ip:8080
+https://http-mqtt-forwarder.onrender.com
 
 ---
 
@@ -24,7 +24,7 @@ HTTP 200
 }
 
 ### Example Request (curl)
-curl http://your-server-ip:8080/lamp/on
+curl https://http-mqtt-forwarder.onrender.com/lamp/on
 
 ---
 
@@ -43,7 +43,7 @@ HTTP 200
 }
 
 ### Example Request
-curl http://your-server-ip:8080/lamp/off
+curl https://http-mqtt-forwarder.onrender.com/lamp/off
 
 ---
 
@@ -61,7 +61,7 @@ GET /lamp?brightness=<value>
 Publishes the brightness raw number to topic: lampur/001/brightness
 
 ### Example Request
-curl "http://your-server-ip:8080/lamp?brightness=55"
+curl "https://http-mqtt-forwarder.onrender.com/lamp?brightness=55"
 
 ### Example Success Response
 HTTP 200
